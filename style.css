@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.headerLeft{
+    color: green;
+}
+header .row{
+    display: flex;
+    justify-content: space-between;
+    height:47vh;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+    padding: 20px;
+
+}
+.headerRight{}
+.headerRight ul{
+    display: flex;
+}
+.headerRight ul li{
+    list-style: none;
+    margin-left: 16px;
+    font-size: 1.2rem;
+}
+.headerRight ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 40px;
+    transition: 0.4s ease-in-out;
+}
+.headerRight ul li a:hover{
+    color: green;
+}
+.headerContent h1 {
+    color: #fff;
+    margin-bottom: 11px;
+    font-size: 37px;
+}
+
+.headerContent {
+    width: 41%;
+    position: absolute;
+    top: 35%;
+    left: 4%;
+}
+
+.headerContent p {
+    margin-bottom: 14px;
+    color: #fff;
+    opacity: 0.9;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+input[type="text"],input[type="email"] {
+    width: 55%;
+    padding: 11px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: green;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 13px;
+    cursor: pointer;
+    width: 55%;
+}
+
+.heroArea .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+.heroLeft{
+    flex-basis: 70%;
+}
+.heroLeft img{
+    max-width: 100%;
+}
+.heroLeft h1{
+    font-size: 30px;
+    width: 80%;
+}
+.heroMiddle{
+    margin-left: 50px;
+}
+.heroMiddle h1 {
+    margin-bottom: 21px;
+}
+
+.heroMiddle p {
+    margin-bottom: 29px;
+    width: 80%;
+}
+
+.heroMiddle p {
+    font-size: 20px;
+}
+section.AboutArea .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutLeft {
+    flex-basis: 48%;
+    color: #fff;
+    font-size: 20px;
+}
+
+.aboutLeft h1 {
+    margin-bottom: 15px;
+}
+
+.aboutLeft p {
+    margin-bottom: 15px;
+}
+.aboutLeft span {
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.aboutRight .row .box {
+    margin: 13px;
+    background: #ddd;
+    text-align: center;
+    padding: 39px;
+}
+
+.aboutRight .row .box i {
+    font-size: 36px;
+}
+
+section.AboutArea {
+    background: #222;
+    padding: 50px 50px;
+}
+
+
+.processArea{
+    padding-bottom:80px;
+}
+.processTitle{
+   text-align: center;
+   font-size: 25px;
+   padding: 100px;
+}
+.processBar{
+    width: 80%;
+    height: 2px;
+    background: #222;
+    margin: 30px auto;
+    position: relative;
+}
+.processBar::before{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: #222;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: 50px;
+}
+.progressBar2{
+    width: 80%;
+    height: 2px;
+    background: #222;
+    margin: 30px auto;
+    position: relative;
+}
+.progressBar2::after{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: #222;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -20px;
+}
+.progressBar3{
+    width: 80%;
+    height: 2px;
+    background: #222;
+    margin: 30px auto;
+    position: relative;
+}
+.progressBar3::before{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: #222;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+}
+
+.processContent {
+    display: flex;
+    gap: 20px;
+}
+.processContent .box2 h1{
+    color: green;
+    text-align: center;
+}
+.processContent .box1{
+    position: relative;
+    top: 0%;
+    left: 10%;
+    text-align: left;
+    width: 20%;
+}
+.processContent .box2{position: relative;top: 0%;left: 19.5%;text-align: center;width: 20%;}
+.processContent .box3{position: relative;top: 0%;right: -24%;text-align: left;width: 20%;}
+.processContent .box3 p{
+    text-align:  right;
+}
+.processContent .box3 h1 {
+    text-align: right;
+}
+
+
+.testimonialArea{
+    padding: 70px;
+    background: #222;
+}
+.testimonialContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonialContent img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.testimonialContent .box1{
+    background: #403c3c;
+    padding-left: 90px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #fff;
+    width: 42%;
+}
+.testimonialContent .box1 p{
+    margin-bottom: 20px;
+    width: 68%;
+}
+.testimonialContent .box2{
+    background: #403c3c;
+}
+.testimonialContent .box2 {
+    width: 47%;
+    padding-left: 90px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.testimonialContent .box2 p {
+    margin-bottom: 10px;
+    width: 55%;
+}
+footer{
+    background: #000;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* Responsive */
+#menu{
+    display: none;
+}
+@media (max-width:768px){
+    html{
+        overflow-x: hidden;
+    }
+    .row{
+        flex-direction: column;
+    }
+    #menu{
+        display: block;
+        color: #fff;
+        font-size: 23px;
+    }
+    .headerRight ul{
+        flex-direction: column;
+        background: red;
+        padding: 20px;
+        position: relative;
+        left: -900px;
+    }
+    .headerRight ul .showmenu{
+        left: 0;
+    }
+    .headerContent h1 {
+        font-size: 19px;
+        z-index: -222;
+    }
+    .headerContent p {
+        font-size: 0.8rem;
+    }
+    .headerContent {
+        margin-top: -93px;
+        left: 20px;
+    }
+    header .row {
+        height: 33vh;
+    }
+    input[type="text"], input[type="email"] {
+        width: 55%;
+        padding: 11px;
+        margin-bottom: 10px;
+    }
+    .heroLeft {
+        width: 72%;
+        flex-basis: 100%;
+        position: relative;
+    }
+    .heroLeft img {
+        max-width: 100%;
+    }
+    .heroLeft h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+    .heroMiddle {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 39px;
+    }
+    .processBar{
+        display: none;
+    }
+    .processContent {
+        flex-direction: column;
+    }
+    .processContent .box1{
+        position: relative;
+        left: 50%;
+        text-align: left;
+        width: 50%;
+        transform: translateX(-50%);
+    }
+    .processContent .box2 {
+        position: relative;
+        left: 50%;
+        text-align: left;
+        width: 50%;
+        transform: translateX(-50%);
+    }
+    .processContent .box2 h1{
+        text-align: left;
+    }
+     .processContent .box3{
+         text-align: left !important;
+        position: relative !important;
+        left: 50% !important;
+        width: 50% !important;
+        transform: translateX(-50%) !important;
+
+    }
+    .processContent .box3 p{
+        text-align: left;
+    }
+    .processContent .box3 h1{
+        text-align: left;
+    }
+    .testimonialContent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+    }
+    .testimonialContent .box1 {
+        background: #403c3c;
+        padding-left: 20%;
+        padding-top: 17px;
+        padding-bottom: 26px;
+        color: #fff;
+        width: 100%;
+    }
+    .testimonialContent .box2 {
+        background: #403c3c;
+        padding-left: 20%;
+        padding-top: 17px;
+        padding-bottom: 26px;
+        color: #fff;
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width:360px){
+    header .row {
+        height: 39vh;
+    }
+    input[type="text"], input[type="email"] {
+        width: 117%;
+        padding: 10px;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    input[type="submit"] {
+        width: 74%;
+        font-size: 12px;
+    }
+    .headerContent h1 {
+        font-size: 18px;
+        z-index: -222;
+        font-weight: 600;
+        width: 100%;
+    }
+    .headerContent p {
+        font-size: 0.7rem;
+    }
+    .headerContent h1 {
+        font-size: 11px;
+    }
+    .heroLeft h1 {
+    font-size: 15px;
+    width: 100%;
+    }
+    .heroMiddle h1 {
+        margin-bottom: 21px;
+        font-size: 19px;
+    }
+    .heroMiddle p {
+        margin-bottom: 29px;
+        width: 100%;
+    }
+    .heroMiddle p {
+        margin-bottom: 29px;
+        width: 100%;
+        font-size: 12px;
+    }
+    input[type="submit"] {
+        width: 74%;
+        font-size: 10px;
+    }
+    .aboutLeft h1 {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .aboutLeft span {
+        font-size: 28px;
+    }
+    .aboutLeft p {
+        font-size: 14px;
+    }
+    .aboutRight .row .box {
+        font-size: 10px;
+    }
+    .aboutRight .row .box i {
+        font-size: 29px;
+        margin-bottom: 7px;
+    }
+
+
+    .processTitle h1 {
+        font-size: 18px;
+        margin-top: -46px;
+    }
+    .processContent {
+        margin-top: -93px;
+    }
+    .testimonialContent .box1 p {
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 13px;
+    }
+    .testimonialContent .box1 {
+        padding-left: 12%;
+    }
+    .testimonialContent .box2 p {
+        width: 100%;
+    }
+    .testimonialContent .box2 {
+        padding-left: 12%;
+    }
+    .testimonialContent h1 {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+
+}
